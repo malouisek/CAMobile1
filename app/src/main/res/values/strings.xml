@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Get a Bike!</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">Main</string>
+    <string name="MAPLOGGING">MAPLOGGING</string>
+    <string name="MAKERCLICKED">Marker is clicked</string>
+    <string name="DUBLIN_BIKE_API_URL"><![CDATA[https://api.jcdecaux.com/vls/v1/stations/?contract=Dublin&apiKey=]]></string>
+    <color name="black">#000000</color>
+</resources>

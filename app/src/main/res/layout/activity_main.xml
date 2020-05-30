@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+tools:context=".MainActivity" >
+
+<!--page title-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bikephoto" />
+
+    <!--bottom navigation bar-->
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <!--home button-->
+
+    <!--list page button-->
+    <Button
+        android:id="@+id/favoritesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="switchToFavActivity"
+        android:text="Favorites"
+        tools:text="Favorites" />
+
+    <!--recycler view button-->
+    <Button
+        android:id="@+id/recyclerListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="switchToRecyclerActivity"
+        android:text="List"
+        tools:text="Recycler List" />
+
+    <!--map button-->
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="switchToMaps"
+        android:text="Map"
+        tools:text="Map" />
+</LinearLayout>
+
+
+</RelativeLayout>
